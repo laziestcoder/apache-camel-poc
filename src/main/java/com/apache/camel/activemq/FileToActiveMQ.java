@@ -1,4 +1,4 @@
-package com.apache.camel.filetoactivemq;
+package com.apache.camel.activemq;
 
 import org.apache.activemq.ActiveMQConnectionFactory;
 import org.apache.camel.CamelContext;
@@ -17,6 +17,7 @@ public class FileToActiveMQ {
 
         camelContext.addComponent("jms", JmsComponent.jmsComponentAutoAcknowledge(connectionFactory));
         camelContext.addRoutes(new RouteBuilder() {
+
             @Override
             public void configure() throws Exception {
 

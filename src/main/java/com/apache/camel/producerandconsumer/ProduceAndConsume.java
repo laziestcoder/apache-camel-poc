@@ -7,12 +7,15 @@ import org.apache.camel.impl.DefaultCamelContext;
 public class ProduceAndConsume {
 
     public static void main(String[] args) throws Exception {
+
         CamelContext camelContext = new DefaultCamelContext();
         camelContext.addRoutes(new RouteBuilder() {
+
             @Override
             public void configure() throws Exception {
                 from("direct:start")
                         .process(new Processor() {
+
                             @Override
                             public void process(Exchange exchange) throws Exception {
 //                                System.out.println("This is processor");
