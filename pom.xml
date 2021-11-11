@@ -11,19 +11,32 @@
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
+        <camel.version>2.25.4</camel.version>
     </properties>
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.apache.camel/camel-context -->
         <dependency>
             <groupId>org.apache.camel</groupId>
             <artifactId>camel-context</artifactId>
-            <version>2.25.4</version>
+            <version>${camel.version}</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.apache.activemq/activemq-camel -->
         <dependency>
             <groupId>org.apache.activemq</groupId>
             <artifactId>activemq-camel</artifactId>
             <version>5.16.3</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.camel/camel-jdbc -->
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-jdbc</artifactId>
+            <version>${camel.version}</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.25</version>
         </dependency>
     </dependencies>
 </project>

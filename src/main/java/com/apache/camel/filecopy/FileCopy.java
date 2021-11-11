@@ -14,8 +14,8 @@ public class FileCopy {
             @Override
             public void configure() throws Exception {
                 System.out.println("File Copy");
-                    from("file:input_box?noop=true")
-                            .to("file:output_box");
+                from("file:input_box?noop=true")
+                        .to("file:output_box");
             }
         });
 
