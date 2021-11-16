@@ -3,6 +3,7 @@ services:
   active_mq:
     image: rmohr/activemq
     ports:
+      - "61616:61616"
       - "8161:8161"
   camel_database:
     image: mysql:8.0.25
